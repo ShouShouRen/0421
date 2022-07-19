@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>黑糖啵啵爆米花</title>
+  <link rel="stylesheet" href="./vendor/normalize.css" />
+  <link rel="stylesheet" href="./vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.compat.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <!-----------nav----------->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-brown fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo.png" alt="" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">關於波波</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#news">最新消息</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#shop">線上訂購</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#map">服務據點</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#service">服務中心</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#cart"><i class="fa-solid fa-cart-shopping" data-bs-toggle="modal"
+                data-bs-target="#exampleModal"><span style="color: #fff; font-size: 8px"></span></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-----------slide----------->
+  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="4000">
+        <div class="div"></div>
+        <img src="./images/banner1.jpg" class="d-block w-100 img-fluid" alt="..." />
+        <div class="carousel-caption d-none d-md-block top-45 mx-auto bg-filter slide-width-500 slide-height-250 p-3">
+          <div class="col-12">
+            <h2 class="text-white text-start fw-bolder fadeInLeft animated text-start">代代相傳的好滋味</h2>
+            <hr>
+            <p class="brown text-start fadeInRightBig animated p-2 h4 text-start lh-md">經歷四十餘載的復古爆米花店，充滿著懷舊的爆米花香。</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="4000">
+        <img src="./images/banner2.jpg" class="d-block w-100" alt="..." />
+        <div class="carousel-caption d-none d-md-block top-45 bg-filter slide-width-500 mx-auto slide-height-250 p-3">
+          <div class="col-12">
+            <h2 class="text-white text-start fw-bolder fadeInLeft animated text-start">精湛的爆米花手藝</h2>
+            <hr>
+            <p class="brown text-start fadeInRightBig animated p-2 h4 text-start lh-md">講究純手工製造，蓬、鬆、酥脆、香濃，不卡牙，
+              片刻都能享受當下的美味。</p>
+          </div>
+        </div>
+        <!-- <div class="carousel-caption d-none d-md-block h-50 wow fadeInLeft">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div> -->
+      </div>
+      <div class="carousel-item" data-bs-interval="4000">
+        <img src="./images/banner-3.jpg" class="d-block w-100" alt="..." />
+        <div class="carousel-caption d-none d-md-block top-45 bg-filter mx-auto slide-width-500 slide-height-250 p-3">
+          <div class="col-12">
+            <h2 class="text-white text-start fw-bolder fadeInLeft animated text-start">多元口味多重選擇</h2>
+            <hr>
+            <p class="brown text-start fadeInRightBig animated p-2 h4 text-start lh-md">
+              依市場需求供顧客最多元的服務，創造多重口味，使顧客有更多元的選擇。</p>
+          </div>
+        </div>
+        <!-- <div class="carousel-caption d-none d-md-block h-50 wow fadeInRight">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div> -->
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-----------about----------->
+  <section id="about" class="hero">
+    <div class="container">
+      <h2 class="text-end brown ms-auto">
+        關於<span class="auto-type"></span>
+      </h2>
+      <div class="row mt-4">
+        <div class="col-lg-6 mt-5 wow fadeInLeft" data-wow-duration="2s">
+          <img src="./images/a1.png" class="img-fulid" />
+        </div>
+        <div class="col-lg-6">
+          <p class="virtical wow fadeIn" data-wow-duration="3s">
+            黑糖波波爆米花創立於西元<br />
+            1938
+            年的爆米花老店<br />，一直由創辦人米香茂先生，<br />自原料的挑選到產品嚴格管制，絕<br />不經手他人，講究純手工製造，<br />蓬鬆、酥脆、香濃，不卡牙。品嚐<br />時口口酥脆、口感奇佳，味道香濃<br />不黏牙，食材當地直取這才稱得上<br />是道道地地的『爆米花』。
+          </p>
+          <p class="virtical-sm wow fadeIn" data-wow-duration="3s">
+            黑糖波波爆米花創立於西元1938
+            年的爆米花老店，一直由創辦人米香茂先生，自原料的挑選到產品嚴格管制，絕不經手他人，講究純手工製造，蓬鬆、酥脆、香濃，不卡牙。品嚐時口口酥脆、口感奇佳，味道香濃不黏牙，食材當地直取這才稱得上是道道地地的『爆米花』。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <img src="./images/cheer.png" class="img-fluid cheer" />
+  <!-----------news----------->
+  <section id="news" class="hero">
+    <div class="container">
+      <h2 class="text-start brown wow zoomInLeft" data-wow-duration="1.5s">
+        最新消息
+      </h2>
+      <div class="row">
+        <div class="col-lg-4 col-md-12" style="padding: 0px">
+          <img src="./images/n1.jpg" class="img-fulid rounded-3" style="height: 100%" />
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 p-4">
+          <h4 class="p-1 fw-bolder">1 / 6 日上市</h4>
+          <p class="text-warning fw-bold">一日爆米體驗<br /></p>
+          <p>帶你體驗一日爆米花手做</p>
+          <button class="bttn">搶先預約</button>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 my-auto date">
+          <div class="year">2022 / 01</div>
+          <div class="day">06</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-12" style="padding: 0px">
+          <img src="./images/n2.jpg" class="img-fulid rounded-3" />
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 p-4">
+          <h4 class="p-1 fw-bolder">2 / 9 日上市</h4>
+          <p class="text-warning p-1 fw-bold">爆米啵啵</p>
+          <p>美味的爆米啵啵即將上市</p>
+          <button class="bttn">搶先預約</button>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 my-auto date">
+          <div class="year">2022 / 02</div>
+          <div class="day">09</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-----------shop----------->
+
+  <!-- <section id="shop" class="hero">
+    <div class="container lg">
+      <h2 class="text-center brown mx-auto wow zoomInUp" data-wow-duration="1.5s">
+        線上訂購
+      </h2>
+      <div class="row mt-5">
+        <div class="col-lg-4 wow fadeIn" data-wow-duration="2" data-wow-delay="0">
+          <div class="card rounded-3" style="overflow: hidden">
+            <img src="./images/Popcorn00005.jpg" alt="" />
+            <div class="card-body p-4">
+              <div class="d-flex justify-content-between">
+                <h4 class="card-title">招牌黑糖</h4>
+                <span class="text-danger" style="font-size: 24px">$150</span>
+              </div>
+              <div class="d-flex justify-content-between align-items-center pt-3">
+                <i class="p-3 fa-solid fa-circle-plus fa-xl add"></i>
+                <input type="text" class="num form-control text-center w-25" value="0">
+                <i class="p-3 fa-solid fa-circle-minus fa-xl min"></i>
+                <button class="btn btn-sm btn-secondary addToCart" data-bs-toggle="modal" data-bs-target="#shopcart">
+                  加入購物車
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 wow fadeIn" data-wow-duration="2" data-wow-delay=".2s">
+          <div class="card rounded-3" style="overflow: hidden">
+            <img src="./images/Popcorn00005.jpg" alt="" />
+            <div class="card-body p-4">
+              <div class="d-flex justify-content-between">
+                <h4 class="card-title">馬告胡椒口味</h4>
+                <span class="text-danger" style="font-size: 24px">$150</span>
+              </div>
+              <div class="d-flex justify-content-between align-items-center pt-3">
+                <i class="p-3 fa-solid fa-circle-plus fa-xl add"></i>
+                <input type="text" class="num form-control text-center w-25" value="0">
+                <i class="p-3 fa-solid fa-circle-minus fa-xl min"></i>
+                <button class="btn btn-sm btn-secondary addToCart" data-bs-toggle="modal" data-bs-target="#shopcart">
+                  加入購物車
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 wow fadeIn" data-wow-duration="2" data-wow-delay=".4s">
+          <div class="card rounded-3" style="overflow: hidden">
+            <img src="./images/Popcorn00005.jpg" alt="" />
+            <div class="card-body p-4">
+              <div class="d-flex justify-content-between">
+                <h4 class="card-title">四川麻辣口味</h4>
+                <span class="text-danger" style="font-size: 24px">$150</span>
+              </div>
+              <div class="d-flex justify-content-between align-items-center pt-3">
+                <i class="p-3 fa-solid fa-circle-plus fa-xl add"></i>
+                <input type="text" class="num form-control text-center w-25" value="0">
+                <i class="p-3 fa-solid fa-circle-minus fa-xl min"></i>
+                <button class="btn btn-sm btn-secondary addToCart" data-bs-toggle="modal" data-bs-target="#shopcart">
+                  加入購物車
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-lg-4 wow fadeIn" data-wow-duration="2" data-wow-delay=".2s">
+          <div class="card rounded-3" style="overflow: hidden">
+            <img src="./images/Popcorn00005.jpg" alt="" />
+            <div class="card-body p-4">
+              <div class="d-flex justify-content-between">
+                <h4 class="card-title">木瓜牛奶口味</h4>
+                <span class="text-danger" style="font-size: 24px">$190</span>
+              </div>
+              <div class="d-flex justify-content-between align-items-center pt-3">
+                <i class="p-3 fa-solid fa-circle-plus fa-xl add"></i>
+                <input type="text" class="num form-control text-center w-25" value="0">
+                <i class="p-3 fa-solid fa-circle-minus fa-xl min"></i>
+                <button class="btn btn-sm btn-secondary addToCart" data-bs-toggle="modal" data-bs-target="#shopcart">
+                  加入購物車
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 wow fadeIn" data-wow-duration="2" data-wow-delay=".4s">
+          <div class="card rounded-3" style="overflow: hidden">
+            <img src="./images/Popcorn00005.jpg" alt="" />
+            <div class="card-body p-4">
+              <div class="d-flex justify-content-between">
+                <h4 class="card-title">招牌黑糖</h4>
+                <span class="text-danger" style="font-size: 24px">$150</span>
+              </div>
+              <div class="d-flex justify-content-between align-items-center pt-3">
+                <i class="p-3 fa-solid fa-circle-plus fa-xl add"></i>
+                <input type="text" class="num form-control text-center w-25" value="0">
+                <i class="p-3 fa-solid fa-circle-minus fa-xl min"></i>
+                <button class="btn btn-sm btn-secondary addToCart" data-bs-toggle="modal" data-bs-target="#shopcart">
+                  加入購物車
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 wow fadeIn" data-wow-duration="2" data-wow-delay=".6s">
+          <div class="card rounded-3" style="overflow: hidden">
+            <img src="./images/Popcorn00005.jpg" alt="" />
+            <div class="card-body p-4">
+              <div class="d-flex justify-content-between">
+                <h4 class="card-title">購物袋</h4>
+                <span class="text-danger" style="font-size: 24px">$100</span>
+              </div>
+              <div class="d-flex justify-content-between align-items-center pt-3">
+                <i class="p-3 fa-solid fa-circle-plus fa-xl add"></i>
+                <input type="text" class="num form-control text-center w-25" value="0">
+                <i class="p-3 fa-solid fa-circle-minus fa-xl min"></i>
+                <button class="btn btn-sm btn-secondary addToCart" data-bs-toggle="modal" data-bs-target="#shopcart">
+                  加入購物車
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <!-- shop-sm -->
+  <!-- <section id="shop-sm" class="hero">
+    <div class="container">
+      <h2 class="text-center brown wow zoomInUp" data-wow-duration="1.5s">
+        線上訂購
+      </h2>
+      <div id="carouselExampleControls" class="carousel slide m-4" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="card rounded-3" style="overflow: hidden">
+              <img src="./images/Popcorn00005.jpg" alt="" />
+              <div class="card-body">
+                <h4 class="card-title text-center">招牌黑糖</h4>
+                <div class="d-flex justify-content-between align-items-center pt-3 z-index-3">
+                  <i class="p-3 fa-solid fa-circle-plus fa-xl add"></i>
+                  <input type="text" class="num form-control text-center w-25" value="0">
+                  <i class="p-3 fa-solid fa-circle-minus fa-xl min"></i>
+                  <button class="btn btn-sm btn-secondary addToCart" data-bs-toggle="modal" data-bs-target="#shopcart">
+                    加入購物車
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card rounded-3" style="overflow: hidden">
+              <img src="./images/Popcorn00005.jpg" alt="" />
+              <div class="card-body">
+                <h4 class="card-title text-center">馬告胡椒口味</h4>
+                <div class="d-flex justify-content-between align-items-center pt-3 z-index-3">
+                  <i class="p-3 fa-solid fa-circle-plus fa-xl add"></i>
+                  <input type="text" class="num form-control text-center w-25" value="0">
+                  <i class="p-3 fa-solid fa-circle-minus fa-xl min"></i>
+                  <button class="btn btn-sm btn-secondary addToCart" data-bs-toggle="modal" data-bs-target="#shopcart">
+                    加入購物車
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card rounded-3" style="overflow: hidden">
+              <img src="./images/Popcorn00005.jpg" alt="" />
+              <div class="card-body">
+                <h4 class="card-title text-center">四川麻辣口味</h4>
+                <div class="d-flex justify-content-between align-items-center pt-3 z-index-3">
+                  <i class="p-3 fa-solid fa-circle-plus fa-xl add"></i>
+                  <input type="text" class="num form-control text-center w-25" value="0">
+                  <i class="p-3 fa-solid fa-circle-minus fa-xl min"></i>
+                  <button class="btn btn-sm btn-secondary addToCart" data-bs-toggle="modal" data-bs-target="#shopcart">
+                    加入購物車
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card rounded-3" style="overflow: hidden">
+              <img src="./images/Popcorn00005.jpg" alt="" />
+              <div class="card-body">
+                <h4 class="card-title text-center">木瓜牛奶口味</h4>
+                <div class="d-flex justify-content-between align-items-center pt-3 z-index-3">
+                  <i class="p-3 fa-solid fa-circle-plus fa-xl add"></i>
+                  <input type="text" class="num form-control text-center w-25" value="0">
+                  <i class="p-3 fa-solid fa-circle-minus fa-xl min"></i>
+                  <button class="btn btn-sm btn-secondary addToCart" data-bs-toggle="modal" data-bs-target="#shopcart">
+                    加入購物車
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card rounded-3" style="overflow: hidden">
+              <img src="./images/Popcorn00005.jpg" alt="" />
+              <div class="card-body">
+                <h4 class="card-title text-center">招牌黑糖</h4>
+                <div class="d-flex justify-content-between align-items-center pt-3 z-index-3">
+                  <i class="p-3 fa-solid fa-circle-plus fa-xl add"></i>
+                  <input type="text" class="num form-control text-center w-25" value="0">
+                  <i class="p-3 fa-solid fa-circle-minus fa-xl min"></i>
+                  <button class="btn btn-sm btn-secondary addToCart" data-bs-toggle="modal" data-bs-target="#shopcart">
+                    加入購物車
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card rounded-3" style="overflow: hidden">
+              <img src="./images/Popcorn00005.jpg" alt="" />
+              <div class="card-body">
+                <h4 class="card-title text-center">購物袋</h4>
+                <div class="d-flex justify-content-between align-items-center pt-3 z-index-3">
+                  <i class="p-3 fa-solid fa-circle-plus fa-xl add"></i>
+                  <input type="text" class="num form-control text-center w-25" value="0">
+                  <i class="p-3 fa-solid fa-circle-minus fa-xl min"></i>
+                  <button class="btn btn-sm btn-secondary addToCart" data-bs-toggle="modal" data-bs-target="#shopcart">
+                    加入購物車
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- shop new design -->
+  <section id="shop" class="hero">
+    <div class="container">
+      <nav>
+        <div class="nav nav-tabs justify-content-evenly" id="nav-tab" role="tablist">
+          <button class="nav-link active" id="nav-first-tab" data-bs-toggle="tab" data-bs-target="#nav-first"
+            type="button" role="tab" aria-controls="nav-first" aria-selected="true">招牌黑糖口味</button>
+
+          <button class="nav-link" id="nav-second-tab" data-bs-toggle="tab" data-bs-target="#nav-second" type="button"
+            role="tab" aria-controls="nav-second" aria-selected="false">馬告胡椒口味</button>
+
+          <button class="nav-link" id="nav-third-tab" data-bs-toggle="tab" data-bs-target="#nav-third" type="button"
+            role="tab" aria-controls="nav-third" aria-selected="false">四川麻辣口味</button>
+
+          <button class="nav-link" id="nav-four-tab" data-bs-toggle="tab" data-bs-target="#nav-four" type="button"
+            role="tab" aria-controls="nav-four" aria-selected="false">木瓜牛奶口味</button>
+        </div>
+      </nav>
+      <!-- shop contact -->
+      <div class="tab-content" id="nav-tabContent">
+        <!-- first -->
+        <div class="tab-pane fade show active" id="nav-first" role="tabpanel" aria-labelledby="nav-first-tab"
+          tabindex="0">
+          <div class="row hero g-4 align-items-center">
+            <div class="col-lg-6 col-md-12">
+              <img src="./images/product/P2S.jpg" alt="">
+            </div>
+            <div class="col-lg-6 col-md-12 p-4">
+              <h3 class="shop_title">招牌黑糖口味</h3>
+              <p class="shop_text">嚴選台南關山的手工柴燒黑糖，以最天然的方式保留甘蔗香氣，搭配焦香後味的爆米花， 唰嘴爽口停不下手。</p>
+              <div>
+                <div class="d-flex align-items-center justify-content-between">
+                  <i class="fa-solid fa-circle-minus fa-2x min"></i>
+                  <input type="text" class="num form-control text-center" value="0">
+                  <i class="fa-solid fa-circle-plus fa-2x add"></i>
+                  <button class="bttn addToCart" data-bs-toggle="modal" data-bs-target="#shopcart">加入購物車</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- second -->
+        <div class="tab-pane fade show" id="nav-second" role="tabpenel" airia-labelledby="nav-second-tab">
+          <div class="row hero g-4 align-items-center">
+            <div class="col-lg-6 col-md-12">
+              <img src="./images/product/P3S.jpg" alt="">
+            </div>
+            <div class="col-lg-6 col-md-12 p-4">
+              <h3 class="shop_title">馬告胡椒口味</h3>
+              <p class="shop_text">有著山中胡椒稱號的馬告，是極為珍貴的天然香料，其多層次的味道，一次就讓你印象深刻。</p>
+              <div>
+                <div class="d-flex align-items-center justify-content-between">
+                  <i class="fa-solid fa-circle-minus fa-2x min"></i>
+                  <input type="text" class="num form-control text-center" value="0">
+                  <i class="fa-solid fa-circle-plus fa-2x add"></i>
+                  <button class="bttn addToCart" data-bs-toggle="modal" data-bs-target="#shopcart">加入購物車</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- third -->
+        <div class="tab-pane fade show" id="nav-third" role="tabpanel" airia-labelledby="nav-third-tab">
+          <div class="row hero g-4 align-items-center">
+            <div class="col-lg-6 col-md-12">
+              <img src="./images/product/P1S.jpg" alt="">
+            </div>
+            <div class="col-lg-6 col-md-12 p-4">
+              <h3 class="shop_title">四川麻辣口味</h3>
+              <p class="shop_text">以中藥、牛油和花椒調配出的四川麻辣味，道地得像吃了一鍋麻辣鍋。</p>
+              <div>
+                <div class="d-flex align-items-center justify-content-between">
+                  <i class="fa-solid fa-circle-minus fa-2x min"></i>
+                  <input type="text" class="num form-control text-center" value="0">
+                  <i class="fa-solid fa-circle-plus fa-2x add"></i>
+                  <button class="bttn addToCart" data-bs-toggle="modal" data-bs-target="#shopcart">加入購物車</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- four -->
+        <div class="tab-pane fade show" id="nav-four" role="tabpanel" airia-labelledby="nav-four-tab">
+          <div class="row hero g-4 align-items-center">
+            <div class="col-lg-6 col-md-12">
+              <img src="./images/product/P4S.jpg" alt="">
+            </div>
+            <div class="col-lg-6 col-md-12 p-4">
+              <h3 class="shop_title">木瓜牛奶口味</h3>
+              <p class="shop_text">特選用台南小農木瓜搭配飛鷹煉乳，甜而不膩的口味，一口接著一口停不下來。</p>
+              <div>
+                <div class="d-flex align-items-center justify-content-between">
+                  <i class="fa-solid fa-circle-minus fa-2x min"></i>
+                  <input type="text" class="num form-control text-center" value="0">
+                  <i class="fa-solid fa-circle-plus fa-2x add"></i>
+                  <button class="bttn addToCart" data-bs-toggle="modal" data-bs-target="#shopcart">加入購物車</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-----------map----------->
+  <section id="map" class="hero" style="
+        background-image: url('./image/D_Branch企業佈局/Branch00003a.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+      ">
+    <div class="container">
+      <h2 class="text-end mx-auto brown lh-sm text-white wow fadeInDown" data-wow-duration="1.2s">
+        啵啵與世界<br />的接軌
+      </h2>
+      <p class="text-center p-4 wow fadeIn" data-wow-duration="3s" style="
+            line-height: 30px;
+            letter-spacing: 8px;
+            font-size: 18px;
+            color: #e5cdbe;
+            font-weight: 600;
+          ">
+        黑糖啵啵爆米花專賣店，將打入國際市場，於2000年與米果先生在日本遊學期間結識日本友人，後為合作關係。並在2015開拓印尼、馬來西亞市場，及各大亞洲地區拓展門市中，讓黑糖啵啵爆米花深入世界的每一個角落。
+      </p>
+    </div>
+  </section>
+  <!-----------service----------->
+  <section id="service" class="hero">
+    <div class="container">
+      <h2 class="brown wow zoomInLeft" data-wow-duration="1.5s">服務中心</h2>
+      <div class="row m-5" style="border-radius: 2em; box-shadow: 0 15px 20px rgb(0 0 0 / 20%)">
+        <div class="col-12 text-center">
+          <div class="p-4">
+            <p class="p-2">姓名:</p>
+            <input type="text" class="form-control" />
+            <p class="p-2">郵件:</p>
+            <input type="mail" class="form-control" />
+            <p class="p-2">留言板:</p>
+            <textarea class="form-control"></textarea>
+            <br />
+            <div class="text-center mt-3">
+              <button type="reset" class="bttn">重設</button>
+              <button type="submit" class="bttn">送出</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-----------footer----------->
+  <footer class="text-center bg-brown text-white p-2">
+    RWD Design All Right &copy;
+  </footer>
+  <!-----------modal----------->
+  <div class="modal fade" id="shopcart" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">購物車</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="px-3">招牌黑糖<span class="disnum">0</span>件</p>
+          <p class="px-3">馬告胡椒口味<span class="disnum">0</span>件</p>
+          <p class="px-3">四川麻辣口味<span class="disnum">0</span>件</p>
+          <p class="px-3">木瓜牛奶口味<span class="disnum">0</span>件</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-bs-dismiss="modal">
+            繼續選購
+          </button>
+          <button type="button" class="btn btn-warning submit" data-bs-target="#submit" data-bs-toggle="modal" data-dismiss="modal">送出</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="submit">
+    <div class="modal-dialog modal-dialog-centered modal-sm">
+        <div class="modal-content">
+            <div class="modal-body p-4 text-center">
+                <i class="fa-solid fa-cart-shopping fa-10x text-warning"></i>
+                <div class="text-warning pt-5">訂購成功，商品將在3日後寄出</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <!-- <div class="modal fade" id="submit" tabindex="-1" aria-labelledby="submitModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="submitModalLabel">完成購物</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          感謝您的購物
+        </div>
+      </div>
+    </div>
+  </div> -->
+</body>
+<script src="./vendor/bootstrap.min.js"></script>
+<script src="./js/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+<script src="./js/app.js"></script>
+
+</html>
