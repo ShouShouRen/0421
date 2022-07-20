@@ -33,6 +33,7 @@ p::selection {
 }
 
 .bg-brown {
+    background-color: #8b360a;
     background-color: #a55a33;
 }
 
@@ -75,7 +76,8 @@ p::selection {
 }
 
 .brown {
-    color: #bea597;
+    /* color: #bea597; */
+    color: #8b360a;
 }
 
 .grey {
