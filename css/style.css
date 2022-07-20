@@ -70,6 +70,10 @@ p::selection {
     /* border: #fff 2px solid; */
 }
 
+.text-green{
+    color: #D8CCA3;
+}
+
 .brown {
     color: #bea597;
 }
@@ -113,6 +117,8 @@ p::selection {
 } */
 
 /* cmp */
+
+
 /* nav */
 ::-webkit-scrollbar {
     width: 15px;
@@ -128,6 +134,8 @@ p::selection {
 }
 
 ul li a {
+    font-size: 20px;
+    color: #fff!important;
     transition: all .3s !important;
 }
 
