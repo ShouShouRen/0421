@@ -67,7 +67,7 @@ p::selection {
 .bg-filter{
     backdrop-filter: blur(8px);
     border-radius: 16px;
-    border: #fff 2px solid;
+    /* border: #fff 2px solid; */
 }
 
 .brown {
